@@ -1,0 +1,26 @@
+{
+    "manifest_version": 1,
+    "name": "TTT Panel",
+    "description": "riderpanel",
+    "author": "Njål Pedersen",
+    "website_url": "https://wtrl.njaped.no",
+    "version": "1.1.0",
+    "content_js": [],
+    "content_css": [],
+    "web_root": "pages",
+    "windows": [{
+        "file": "pages/mod.html",
+        "id": "panel-live",
+        "name": "TTT Panel",
+        "description": "riderpanel",
+        "always_visible": true,
+        "overlay": true,
+        "frame": false,
+        "default_bounds": {
+            "width": 450,
+            "height": 660,
+            "x": 100,
+            "y": 100
+        }
+    }]
+}
