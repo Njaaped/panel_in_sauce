@@ -34,7 +34,7 @@ function initWindowControls() {
     const closeButton = document.querySelector('.window-control-close');
     if (closeButton) {
         closeButton.addEventListener('click', () => {
-            common.rpc.hideWindow();
+            common.rpc.closeWindow()
         });
     }
 }
