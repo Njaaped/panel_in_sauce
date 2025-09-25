@@ -30,8 +30,22 @@ function initResizer() {
 }
 
 // Ensure the DOM is loaded before trying to find the handle
+function initWindowControls() {
+    const closeButton = document.querySelector('.window-control-close');
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            common.rpc.closeWindow()
+        });
+    }
+}
+
+// Ensure the DOM is loaded before trying to find the handle
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initResizer);
+    document.addEventListener('DOMContentLoaded', () => {
+        initResizer();
+        initWindowControls();
+    });
 } else {
     initResizer();
+    initWindowControls();
 }

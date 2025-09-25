@@ -64,3 +64,22 @@ html, body {
     -webkit-app-region: no-drag; /* Critical for the handle to be interactive */
     z-index: 100;
 }
+
+/* Window Controls Styling */
+.window-controls {
+    margin-left: auto;
+    -webkit-app-region: no-drag;
+}
+
+.window-control-close {
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.window-control-close:hover {
+    color: #ff4d4d;
+}

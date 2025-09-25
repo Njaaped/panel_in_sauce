@@ -13,7 +13,7 @@
         "id": "panel-live",
         "name": "TTT Panel",
         "description": "riderpanel",
-        "always_visible": true,
+        "always_visible": false,
         "overlay": true,
         "frame": false,
         "default_bounds": {
